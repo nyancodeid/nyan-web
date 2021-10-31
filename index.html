@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nyan Website</title>
+  <script src="https://cdn-tailwindcss.vercel.app/"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: tailwind.colors.yellow,
+          },
+        },
+      },
+    }
+  </script>
+  <style type="text/tailwindcss">
+    .btn {
+      @apply inline-block rounded-md text-center;
+    }
+
+    .btn-base {
+      @apply text-lg font-semibold py-2 px-4;
+    }
+
+    .btn-xl {
+      @apply font-extrabold text-xl py-4 px-6;
+    }
+
+    .btn-primary {
+      @apply text-white bg-primary-500;
+    }
+
+    .btn-primary:hover {
+      @apply bg-primary-600;
+    }
+    .badge-tech {
+      @apply inline-block px-3 py-1 mr-1 mb-2 text-sm rounded-lg;
+    }
+    .badge-tech--tag {
+      @apply bg-primary-100 text-primary-600 ;
+    }
+    .badge-tech--link {
+      @apply bg-green-100 text-green-600 hover:bg-green-300 hover:text-green-800;
+    }
+    .-scale-x-1 {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="antialiased text-gray-600">
+    <div class="bg-gray-100">
+      <div class="max-w-screen-lg mx-auto px-3 py-6">
+        <div class="flex flex-wrap justify-between items-center">
+          <div>
+            <a href="/">
+              <span class="text-gray-900 inline-flex items-center font-semibold text-3xl">Holaa 👋</span>
+            </a>
+          </div>
+          <nav>
+            <ul class=" navbar flex items-center font-medium text-xl text-gray-800">
+              <li class="mx-4">
+                <a href="https://linktr.ee/ryanaunur" target="_blank" class="px-3 py-2 rounded-lg bg-green-200 text-green-600">
+                  <img class="inline-block mb-1 mr-2" src="linktree.ico" alt="">
+                  LinkTree
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="max-w-screen-lg mx-auto px-3 pt-20 pb-32">
+        <header class="text-center">
+          <img src="avatar.jpeg" alt="Avatar" class="w-[140px] h-[140px] rounded-full mx-auto mb-8">
+          <h1 class="text-5xl text-gray-900 font-bold whitespace-pre-line leading-[4.5rem]">Hi there, i'm
+            <span class="text-primary-500">Ryan Aunur Rassyid</span></h1>
+          <div class="text-2xl mt-4 mb-16 text-gray-400">an Full Stuck developer who loves to build things that can be
+            useful for developers. Most of my work is open source and publicly available on GitHub.</div><a
+            href="https://github.com/nyancodeid">
+            <div class="btn btn-xl btn-primary">
+              Follow me on Github
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="inline-block mb-1 ml-2" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" fill="currentColor"></path></svg>
+            </div>
+          </a>
+        </header>
+      </div>
+    </div>
+    <div class="max-w-screen-lg mx-auto px-3 py-16">
+      <div class="mb-12 text-center">
+        <h2 class="text-4xl text-gray-900 font-bold">Projects</h2>
+        <div class="mt-4 text-xl md:px-20">Here are some projects that I made and are available openly (open-source).
+        </div>
+      </div>
+
+      <!-- Quotes -->
+      <div class="mt-20 flex flex-wrap items-center flex-row-reverse">
+        <div class="w-full sm:w-1/2 text-center sm:px-6">
+          <h3 class="text-3xl text-gray-900 font-semibold">Quote's</h3>
+          <div class="mt-2">
+            <a href="https://quotes.nyandev.id" target="_blank" class="badge-tech badge-tech--link">quotes.nyandev.id</a>
+          </div>
+          <div class="mt-6 text-xl leading-9">A simple website that displays some quotes from figures around the world. Created for participants at the HacktoberFest 2021 event. More than <b class="text-green-500">100 contributors</b> from all over the world helped develop this website.</div>
+          <div class="mt-6">
+            <span class="badge-tech badge-tech--tag">Vue 3</span>
+            <span class="badge-tech badge-tech--tag">Vite</span>
+            <span class="badge-tech badge-tech--tag">Vite SSG</span>
+            <span class="badge-tech badge-tech--tag">Typescript</span>
+            <span class="badge-tech badge-tech--tag">TailwindCSS</span>
+            <span class="badge-tech badge-tech--tag">Vercel</span>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="quotes-illustration.png" alt="First feature alt text"/>
+        </div>
+      </div>
+      <!-- IRO -->
+      <div class="mt-20 flex flex-wrap items-center">
+        <div class="w-full sm:w-1/2 text-center sm:px-6">
+          <h3 class="text-3xl text-gray-900 font-semibold">IRO</h3>
+          <div class="mt-2">
+            <a href="https://quotes.nyandev.id" target="_blank" class="badge-tech badge-tech--link">quotes.nyandev.id</a>
+          </div>
+          <div class="mt-6 text-xl leading-9">A simple web app that helps us play with colors. Available features are color code conversion (HEX, RGB, HSL, and CMYK), Inspect the HEX color code of objects around you through the camera, color gradients, and color harmonies.</div>
+          <div class="mt-6">
+            <span class="badge-tech badge-tech--tag">Vue 3</span>
+            <span class="badge-tech badge-tech--tag">Vite</span>
+            <span class="badge-tech badge-tech--tag">WebWorker</span>
+            <span class="badge-tech badge-tech--tag">PWA</span>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="iro-illustration.png" alt="First feature alt text"/>
+        </div>
+      </div>
+      <!-- InstaShare -->
+      <div class="mt-20 flex flex-wrap items-center flex-row-reverse">
+        <div class="w-full sm:w-1/2 text-center sm:px-6">
+          <h3 class="text-3xl text-gray-900 font-semibold">InstaShare</h3>
+          <div class="mt-2">
+            <a href="https://quotes.nyandev.id" target="_blank" class="badge-tech badge-tech--link">share.nyandev.id</a>
+          </div>
+          <div class="mt-6 text-xl leading-9">A simple website that allows us to share files instantly and save them on a decentralized network (IPFS) that cannot be modified or even deleted.</div>
+          <div class="mt-6">
+            <span class="badge-tech badge-tech--tag">Vue 3</span>
+            <span class="badge-tech badge-tech--tag">Vite</span>
+            <span class="badge-tech badge-tech--tag">Pinia</span>
+            <span class="badge-tech badge-tech--tag">PWA</span>
+            <span class="badge-tech badge-tech--tag">IPFS</span>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="instashare-illustration.png" alt="First feature alt text"/>
+        </div>
+      </div>
+      <!-- Mockify -->
+      <div class="mt-20 flex flex-wrap items-center">
+        <div class="w-full sm:w-1/2 text-center sm:px-6">
+          <h3 class="text-3xl text-gray-900 font-semibold">Mockify</h3>
+          <div class="mt-2">
+            <a href="https://quotes.nyandev.id" target="_blank" class="badge-tech badge-tech--link">mockify.nyandev.id</a>
+          </div>
+          <div class="mt-6 text-xl leading-9">A simple web app that is used to beautify the appearance of our images by adding elements such as shadows, borders, or even mockups.</div>
+          <div class="mt-6">
+            <span class="badge-tech badge-tech--tag">Vue 3</span>
+            <span class="badge-tech badge-tech--tag">Vite</span>
+            <span class="badge-tech badge-tech--tag">Pinia</span>
+            <span class="badge-tech badge-tech--tag">PWA</span>
+          </div>
+        </div>
+        <div class="w-full sm:w-1/2 p-6">
+          <img src="mockify-illustration.png" class="-scale-x-1" alt="First feature alt text"/>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-screen-lg mx-auto px-3 py-16">
+      <div
+        class="text-center flex flex-col p-4 sm:text-left sm:flex-row sm:items-center sm:justify-between sm:p-12 bg-primary-50 rounded-md">
+        <div class="text-2xl font-semibold">
+          <div class="text-gray-900">Want to see other projects I've made.</div>
+          <div class="text-primary-500">Start by following my Github.</div>
+        </div>
+        <div class="whitespace-no-wrap mt-3 sm:mt-0 sm:ml-2">
+          <a href="https://creativedesignsguru.com/category/nextjs/">
+            <div class="jsx-2452873545 btn btn-base btn-primary">Github Repositories</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-gray-100">
+      <div class="max-w-screen-lg mx-auto px-3 py-16">
+        <div class="text-center">
+          <span class="text-gray-400 inline-flex items-center font-semibold text-xl">
+            Stay Connect
+          </span>
+          <nav>
+            <ul class="navbar mt-5 flex flex-row justify-center font-medium text-xl text-gray-800">
+              <li class="mx-4"><a href="/">Facebook</a></li>
+              <li class="mx-4"><a href="/">Twitter</a></li>
+              <li class="mx-4"><a href="/">Instagram</a></li>
+              <li class="mx-4"><a href="https://github.com/nyancodeid">GitHub</a></li>
+            </ul>
+          </nav>
+          <div class="mt-8 text-sm">
+            <div class="footer-copyright">
+              © Copyright 2021. Template inspired by 
+              
+              <a href="https://creativedesignsguru.com" class="text-primary-500">
+                CreativeDesignsGuru
+              </a>. Illustration by
+              <a href="https://storyset.com" class="text-primary-500">
+                StorySet
+              </a>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
